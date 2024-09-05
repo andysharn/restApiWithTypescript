@@ -1,5 +1,5 @@
 import {Request , Response , NextFunction } from 'express'
-
+import prisma from '../utils/database'
 import jwt from 'jsonwebtoken'
 
 const authMiddleware=(req: Request , res:Response , next:NextFunction)=>{
